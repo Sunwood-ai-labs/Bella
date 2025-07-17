@@ -1,4 +1,4 @@
-/* --- 加载屏幕 --- */
+/* --- ローディング画面 --- */
 #loading-screen {
     position: fixed;
     top: 0;
@@ -35,7 +35,7 @@
 }
 
 
-/* --- 基本重置和全局样式 --- */
+/* --- リセット＆全体スタイル --- */
 * {
     margin: 0;
     padding: 0;
@@ -49,7 +49,7 @@ html, body {
     overflow: hidden; /* 防止视频导致滚动条 */
 }
 
-/* --- 视频背景 --- */
+/* --- ビデオ背景 --- */
 .video-container {
     position: fixed;
     top: 0;
@@ -75,7 +75,7 @@ html, body {
     opacity: 1;
 }
 
-/* --- 内容覆盖层 --- */
+/* --- コンテンツオーバーレイ --- */
 .content-overlay {
     position: relative;
     height: 100vh;
@@ -89,7 +89,7 @@ html, body {
     z-index: 1;
 }
 
-/* --- 顶部好感度条 --- */
+/* --- 上部好感度バー --- */
 .top-bar {
     width: 100%;
     max-width: 500px;
@@ -120,12 +120,12 @@ html, body {
     transition: width 0.5s ease-in-out;
 }
 
-/* --- 中间内容 (上传按钮) --- */
+/* --- 中央コンテンツ（アップロードボタン） --- */
 .center-content {
     /* 这个区域现在是空的，可以移除或保留以备将来使用 */
 }
 
-/* --- 语音识别结果显示 --- */
+/* --- 音声認識結果表示 --- */
 .transcript-container {
     position: absolute;
     bottom: 180px; /* 放置在麦克风按钮上方 */
@@ -152,7 +152,7 @@ html, body {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 }
 
-/* --- 底部内容 --- */
+/* --- 下部コンテンツ --- */
 .bottom-bar {
     width: 100%;
     display: flex;
@@ -193,7 +193,7 @@ html, body {
     color: white;
 }
 
-/* 麦克风 "监听中" 的动画效果 */
+/* マイク「リスニング中」アニメーション */
 .mic-button.is-listening {
     animation: pulse 1.5s infinite;
 }
@@ -223,7 +223,7 @@ html, body {
     text-decoration: underline;
 }
 
-/* --- 响应式设计 --- */
+/* --- レスポンシブデザイン --- */
 @media (max-width: 600px) {
     .content-overlay {
         padding: 20px;
